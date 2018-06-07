@@ -68,7 +68,7 @@ NotificationsComponent.prototype.addEventListener = function(type: string, handl
 			DEVICE_NOTIF_EVENT,
 			function(notifData) {
 				var data = JSON.parse(notifData.dataJSON);
-				handler(data);
+				// handler(data);
 			}
 		);
 	} else if (type === 'register') {
