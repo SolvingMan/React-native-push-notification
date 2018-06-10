@@ -29,18 +29,18 @@ var Notifications = {
 	}
 };
 
-// Notifications.callNative = function(name: String, params: Array) {
-// 	if ( typeof this.handler[name] === 'function' ) {
-// 		if ( typeof params !== 'array' &&
-// 			 typeof params !== 'object' ) {
-// 			params = [];
-// 		}
+Notifications.callNative = function(name: String, params: Array) {
+	if ( typeof this.handler[name] === 'function' ) {
+		if ( typeof params !== 'array' &&
+			 typeof params !== 'object' ) {
+			params = [];
+		}
 
-// 		return this.handler[name](...params);
-// 	} else {
-// 		return null;
-// 	}
-// };
+		return this.handler[name](...params);
+	} else {
+		return null;
+	}
+};
 
 /**
  * Configure local and remote notifications
