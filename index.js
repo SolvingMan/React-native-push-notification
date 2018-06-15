@@ -68,13 +68,13 @@ Notifications.configure = function(options: Object) {
 		this.permissions = options.permissions;
 	}
 
-	if ( typeof options.senderID !== 'undefined' ) {
-		this.senderID = options.senderID;
-	}
+	// if ( typeof options.senderID !== 'undefined' ) {
+	// 	this.senderID = options.senderID;
+	// }
 
-	if ( typeof options.onRemoteFetch !== 'undefined' ) {
-		this.onRemoteFetch = options.onRemoteFetch;
-	}
+	// if ( typeof options.onRemoteFetch !== 'undefined' ) {
+	// 	this.onRemoteFetch = options.onRemoteFetch;
+	// }
 
 	if ( this.isLoaded === false ) {
 		this._onRegister = this._onRegister.bind(this);
